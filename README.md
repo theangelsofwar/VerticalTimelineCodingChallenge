@@ -1,4 +1,4 @@
-# RESTCodingChallenge
+# VerticalTimelineCodingChallenge
 Questions (choose only one to answer):
 Vertical Timeline Built With React and Hooks
 1. Create a web app that takes a collection of date strings in YYYY-MM-DD format (e.g. '2019-01-23') and orders those dates chronologically on a linear axis that is displayed to the user. Because the axis is linear, the further apart dates are chronologically, the further apart they should be spaced on your timeline axis. It is especially good to deal with how to display the dates on your timeline axis when the date labels are so close together that they run into one another.
