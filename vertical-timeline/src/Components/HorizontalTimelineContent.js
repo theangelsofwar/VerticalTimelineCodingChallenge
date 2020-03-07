@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import SwipeableViews from 'react-swipeable-views';
 
-import HorizontalTimeline from 'HorizontalTimeline';
-import HorizontalTimelineConfigurator from 'HorizontalTimelineConfigurator';
+import HorizontalTimeline from './HorizontalTimeline';
+import HorizontalTimelineConfigurator from './HorizontalTimelineConfigurator';
 
 export default class HorizontalTimelineContent extends React.Component {
   constructor(props) {
@@ -16,15 +16,15 @@ export default class HorizontalTimelineContent extends React.Component {
       // timelineConfig
       minEventPadding: 20,
       maxEventPadding: 120,
-      linePadding: 100,
+      linePadding: 250,
       labelWidth: 100,
       fillingMotionStiffness: 150,
       fillingMotionDamping: 25,
       slidingMotionStiffness: 150,
       slidingMotionDamping: 25,
       stylesBackground: '#f8f8f8',
-      stylesForeground: '#7b9d6f',
-      stylesOutline: '#dfdfdf',
+      stylesForeground: 'grey',
+      stylesOutline: 'cyan',
       isTouchEnabled: true,
       isKeyboardEnabled: true,
       isOpenEnding: true,
@@ -69,7 +69,8 @@ export default class HorizontalTimelineContent extends React.Component {
 
     return (
       <div>
-        <div style={{ width: '60%', height: '100px', margin: '0 auto' }}>
+        <div style={{ transform: [{ rotate: '90deg'}]
+, width: '60%', height: '100px', margin: '0 auto' }}>
           <HorizontalTimeline
             fillingMotion={{ stiffness: state.fillingMotionStiffness, damping: state.fillingMotionDamping }}
             index={this.state.value}
@@ -122,4 +123,4 @@ export default class HorizontalTimelineContent extends React.Component {
 }
 
 
-export default HorizontalTimelineContent;
+// export default HorizontalTimelineContent;

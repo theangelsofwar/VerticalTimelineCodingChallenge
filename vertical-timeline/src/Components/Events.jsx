@@ -2,8 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { cummulativeSeperation } from '../helpers';
-import TimelineDot from 'TimelineDot';
-
+import TimelineDot from './TimelineDot';
 /**
  * The markup Information for all the events on the horizontal timeline.
  *
@@ -14,7 +13,8 @@ const EventsBar = ({ events, selectedIndex, styles, handleDateClick, labelWidth 
   <ol
     className='events-bar'
     style={{
-      listStyle: 'none'
+      listStyle: 'none',
+
     }}
   >
     {events.map((event, index) =>

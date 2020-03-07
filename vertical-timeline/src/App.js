@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 // import logo from './logo.svg';
 // import 'App.css';
 
-import HorizontalTimelineContent from '../Components/HorizontalTimelineContent';
-import GameInfo from '../resources/content';
+import HorizontalTimelineContent from './Components/HorizontalTimelineContent';
+import GameInfo from './resources/content';
 
 // Directly importing the minified bootstrap css to avoid all the painful
 // steps it will take otherwise to get it to work.

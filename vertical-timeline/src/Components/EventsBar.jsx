@@ -183,6 +183,7 @@ class EventsBar extends React.Component {
             position: 'relative',
             height: '100%',
             margin: '0 40px',
+            transform: [{ rotate: '90deg'}],
             overflow: 'hidden'
           }}
         >

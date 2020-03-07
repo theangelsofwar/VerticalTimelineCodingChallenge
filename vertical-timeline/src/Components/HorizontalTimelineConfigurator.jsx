@@ -80,7 +80,7 @@ const HorizontalTimelineConfigurator = (props) => {
       <h2 className='text-center' style={{ flex: 1 }} >Configure the Timeline</h2>
 
       <Container label='Padding between events'>
-        <NumberIn config='minEventPadding' label='Minimum' max={props.maxEventPadding} min={20} {...props} />
+        <NumberIn config='minEventPadding' label='Minimum' max={props.maxEventPadding} min={100} {...props} />
         <NumberIn config='maxEventPadding' label='Maximum' min={props.minEventPadding} {...props} />
       </Container>
 

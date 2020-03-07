@@ -3,8 +3,9 @@ import PropTypes from 'prop-types';
 // Decorators
 import Radium from 'radium';
 import dimensions from 'react-dimensions';
+// import { }
 // Components
-import EventsBar from 'EventsBar';
+import EventsBar from './EventsBar';
 // Helpers and constansts
 import {zip, daydiff, cummulativeSeperation} from '../helpers';
 import Constants from '../Constants';
@@ -138,7 +139,9 @@ HorizontalTimeline.defaultProps = {
   styles: {
     outline: '#dfdfdf',
     background: '#f8f8f8',
-    foreground: '#7b9d6f'
+    foreground: '#7b9d6f',
+    transform: [{ rotate: '90deg'}]
+
   },
   fillingMotion: {
     stiffness: 150,
